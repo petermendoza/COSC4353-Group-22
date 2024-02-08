@@ -1,6 +1,13 @@
 Group 22\
 Bryant Huynh, Maryann Tran, Richard Phong, Peter John Mendoza
 
+**Complete Tech Stack SetUp**
+
+We followed this blog post guide in order to set up and connect our backend and frontend components.
+
+https://blog.nextideatech.com/how-to-get-started-with-the-mern-stack-a-comprehensive-guide/
+
+
 **Set Up**
 
 1. Installing Node.js
