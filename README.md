@@ -16,6 +16,12 @@ If you do not already have Node.js installed follow the link provided below and 
 
 https://nodejs.org/en/
 
+Once you have installed Node.js run this command in your terminal to install dependencies
+
+```shell
+npm install express cors dotenv
+```
+
 2. Installing MongoDB
 
 -- For Mac Users: -- 
@@ -52,6 +58,18 @@ npm install mongoose
 ```
 <br>
 <br>
+
+4. Installing Dependencies
+
+Open a new terminal in under the client directory and run these following commands.
+
+```shell
+npm install bootstrap 
+```
+
+```shell
+npm install react-router-dom 
+```
 
 **Start Up of Project**
 
