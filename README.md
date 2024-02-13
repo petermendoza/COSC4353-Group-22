@@ -71,6 +71,10 @@ npm install bootstrap
 npm install react-router-dom 
 ```
 
+```shell
+npm install react-icons --save
+```
+
 **Start Up of Project**
 
 -- Backend Server -- 
