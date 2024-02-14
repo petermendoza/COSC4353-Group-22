@@ -67,3 +67,29 @@
     color: #fff; 
     font-weight: 700; 
 }
+
+.wrapper button:hover {
+    background: #6a0d83; 
+}
+
+/* Divider between Login and Create Account buttons */
+.wrapper .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6a0d83;
+    font-size: 12px;
+}
+
+.wrapper .divider hr {
+    width: 100px;
+    height: 1px;
+    background-color: #6a0d83;
+    color: #6a0d83;
+    border-color: #6a0d83;
+    border: 1px;
+}
+
+.wrapper .divider p {
+    padding: 0px 10px 0px 10px;
+}

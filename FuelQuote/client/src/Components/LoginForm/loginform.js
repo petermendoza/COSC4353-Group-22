@@ -1,13 +1,14 @@
 import React from "react";
 import './loginform.css';
 import { FaUser, FaLock } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Loginform = () => {
 
     return (
         <div className = 'wrapper'>
             <form action = "">
-                <h1>Login</h1>
+                <h1>Welcome</h1>
                 <div className = "input-box">
                     <input type = "username" placeholder = 'Username' required />
                     <FaUser className = 'icon'/>
@@ -16,10 +17,20 @@ const Loginform = () => {
                     <input type = "password" placeholder = 'Password' required />
                     <FaLock className = 'icon'/>
                 </div>
+                
+                <Link to = "/ClientProfilePage">
+                    <button type = "submit">Login</button>
+                </Link>
 
-                <button type = "submit"><a href = "/ClientProfilePage">Login</a></button>
+                <div class = "divider">
+                    <hr></hr>
+                    <p> OR </p>
+                    <hr></hr>
+                </div>
 
-                <button type = "register-link">Create Account</button>
+                <Link to = "/ClientProfilePage">
+                    <button type = "register-link">Create Account</button>
+                </Link>
             </form>
         </div>
     );
