@@ -1,16 +1,23 @@
-
-import { Routes, Route, Router } from 'react-router-dom';
 import './App.css';
-import ClientProfile from './Components/ClientProfile/ClientProfile';
-import Loginpage from './Components/Loginpage/loginpage';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+
+import Loginpage from './Pages/loginpage';
+import ClientProfilePage from './Pages/ClientProfilePage';
+import FuelQuoteFormPage from './Pages/FuelQuoteFormPage';
+import FuelQuoteHistoryPage from './Pages/FuelQuoteHistoryPage';
 
 function App() {
   return (
       <div className="App">
-        <Loginpage />
-        <Routes>
-          <Route path = "/ClientProfile" element = {<ClientProfile />} /> 
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route index element = {<Loginpage />} />
+            <Route path = "/loginpage" element = {<Loginpage />} />
+            <Route path = "/ClientProfilePage" element = {<ClientProfilePage />} />
+            <Route path = "/FuelQuoteFormPage" element = {<FuelQuoteFormPage />} />
+            <Route path = "/FuelQuoteHistoryPage" element = {<FuelQuoteHistoryPage />} />
+          </Routes>
+        </BrowserRouter>
       </div>
   );
 }

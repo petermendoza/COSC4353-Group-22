@@ -1,8 +1,8 @@
 import React from "react";
-import './loginpage.css';
+import './loginform.css';
 import { FaUser, FaLock } from "react-icons/fa";
 
-const Loginpage = () => {
+const Loginform = () => {
 
     return (
         <div className = 'wrapper'>
@@ -17,7 +17,7 @@ const Loginpage = () => {
                     <FaLock className = 'icon'/>
                 </div>
 
-                <button type = "submit">Login</button>
+                <button type = "submit"><a href = "/ClientProfilePage">Login</a></button>
 
                 <button type = "register-link">Create Account</button>
             </form>
@@ -25,4 +25,4 @@ const Loginpage = () => {
     );
 };
 
-export default Loginpage
+export default Loginform
