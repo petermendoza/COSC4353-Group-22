@@ -2,7 +2,7 @@
 import { Routes, Route, Router } from 'react-router-dom';
 import './App.css';
 import ClientProfile from './Components/ClientProfile/ClientProfile';
-import Loginpage from './Components/loginpage';
+import Loginpage from './Components/Loginpage/loginpage';
 
 function App() {
   return (
