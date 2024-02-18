@@ -18,7 +18,7 @@ const LoginForm = () => {
                     <FaLock className = 'icon'/>
                 </div>
                 
-                <Link to = "/ClientProfilePage">
+                <Link to = "/Profile">
                     <button type = "submit">Login</button>
                 </Link>
 
