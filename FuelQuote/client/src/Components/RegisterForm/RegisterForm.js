@@ -20,7 +20,7 @@ const RegisterForm = () => {
                     <FaLock className = 'icon'/>
                 </div>
                 
-                <Link to = "/ClientProfilePage">
+                <Link to = "/Profile">
                     <button type = "submit">Register</button>
                 </Link>
 
