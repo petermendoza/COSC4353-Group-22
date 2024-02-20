@@ -50,7 +50,7 @@ const FuelQuoteHistory = () => {
     }
 
     return (
-        <div className = "wrapper">
+        <div className = "historywrapper">
             
             <div className = "accordian">
 

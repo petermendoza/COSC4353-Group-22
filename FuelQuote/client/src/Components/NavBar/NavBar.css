@@ -1,0 +1,12 @@
+.NavBarWrapper {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    background: red;
+    width: 100%;
+    justify-content: center;
+}
+
+.navIcon {
+    height: 5vh;
+}

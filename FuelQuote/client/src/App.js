@@ -1,6 +1,7 @@
 import './App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
+import NavBar from './Components/NavBar/NavBar';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
 import ClientProfilePageEdit from './Pages/ClientProfilePageEdit';
@@ -11,6 +12,7 @@ import FuelQuoteHistoryPage from './Pages/FuelQuoteHistoryPage';
 function App() {
   return (
       <div className="App">
+        <NavBar />
         <BrowserRouter>
           <Routes>
             <Route index element = {<LoginPage />} />

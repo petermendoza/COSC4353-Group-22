@@ -1,8 +1,14 @@
-.wrapper {
+.historywrapper {
     background: #deae74;
     display: flex;
     justify-content: center;
     width: auto;
+    border: 2px solid rgba(255, 255, 255, .2); 
+    backdrop-filter: blur(37px);
+    box-shadow: 0 0 10px rgba(106, 13, 131, .2); 
+    color: #fff;
+    border-radius: 10px; 
+    padding: 30px 40px; 
 }
 
 .accordian {
