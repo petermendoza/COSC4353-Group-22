@@ -5,8 +5,15 @@
     background: red;
     width: 100%;
     justify-content: center;
+    height: 5vh;
 }
 
-.navIcon {
-    height: 5vh;
+.navButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    margin: 0px 10px 0px 10px;
 }

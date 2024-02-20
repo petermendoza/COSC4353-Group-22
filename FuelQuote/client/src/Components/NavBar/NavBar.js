@@ -1,15 +1,27 @@
 import './NavBar.css';
 
 import React from 'react';
-import { FaRegClock } from "react-icons/fa";
 
 const NavBar = () => {
     return (
         <div className = 'NavBarWrapper'>
             
-            <div className = "navButton">
-                <a href = "/Profile">
-                    <FaRegClock className = 'navIcon'/>
+            <div className = "navButtons">
+
+            <a className = "links" href = "/LoginPage">
+                    Login 
+                </a>
+
+                <a className = "links" href = "/Profile">
+                    Profile 
+                </a>
+
+                <a className = "links" href = "/FuelQuoteFormPage">
+                    Get a Quote 
+                </a>
+
+                <a className = "links" href = "/FuelQuoteHistoryPage">
+                    History 
                 </a>
             </div>
 
@@ -17,4 +29,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default NavBar; 
