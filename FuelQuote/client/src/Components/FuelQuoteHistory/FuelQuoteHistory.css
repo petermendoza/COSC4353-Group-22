@@ -1,0 +1,54 @@
+.wrapper {
+    background: #deae74;
+    display: flex;
+    justify-content: center;
+}
+
+.accordian {
+    width: 500px;
+}
+
+.quote {
+    border: solid 2px #6a0d83;
+    background: #f9a237;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.quote:hover {
+    background-color: #dc851a;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .quoteIDBox {
+    display: flex;
+}
+
+.header span {
+    display: flex;
+    align-items: center;
+    color: #6a0d83;
+}
+
+.quoteID {
+    margin: 0px 5px;
+    color: #6a0d83;
+    font-weight: bold;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}

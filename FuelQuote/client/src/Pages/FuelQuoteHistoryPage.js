@@ -1,9 +1,10 @@
 import FuelQuoteHistory from "../Components/FuelQuoteHistory/FuelQuoteHistory";
+import './FuelQuoteHistoryPage.css';
 
 const FuelQuoteHistoryPage = () => {
     return (
         <div>
-            <p>Fuel Quote History Page</p>
+            <p className = "title" >History</p>
             <FuelQuoteHistory />
         </div>
     );
