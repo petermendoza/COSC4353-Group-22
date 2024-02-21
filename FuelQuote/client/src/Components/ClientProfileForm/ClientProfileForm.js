@@ -1,6 +1,6 @@
+import '../../Style/Components/ClientProfileForm.css';
+
 import React from "react";
-import { useState } from "react";
-import './ClientProfileForm.css';
 import { Link } from "react-router-dom";
 
 const ClientProfileForm = () => {

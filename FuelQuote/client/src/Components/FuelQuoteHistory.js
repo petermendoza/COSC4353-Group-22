@@ -1,4 +1,4 @@
-import './FuelQuoteHistory.css';
+import '../Style/Components/FuelQuoteHistory.css';
 
 import { useState } from "react";
 import React from "react";

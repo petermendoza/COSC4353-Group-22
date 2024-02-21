@@ -1,5 +1,5 @@
-import FuelQuoteHistory from "../Components/FuelQuoteHistory/FuelQuoteHistory";
-import './FuelQuoteHistoryPage.css';
+import FuelQuoteHistory from "../Components/FuelQuoteHistory";
+import '../Style/Pages/FuelQuoteHistoryPage.css';
 
 const FuelQuoteHistoryPage = () => {
     return (

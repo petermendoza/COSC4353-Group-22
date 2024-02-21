@@ -1,7 +1,7 @@
-import './App.css';
+import './Style/App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
-import NavBar from './Components/NavBar/NavBar';
+import NavBar from './Components/NavBar';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
 import ClientProfilePageEdit from './Pages/ClientProfilePageEdit';
