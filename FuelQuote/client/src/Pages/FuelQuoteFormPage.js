@@ -1,12 +1,7 @@
-import FuelQuoteForm from "../Components/FuelQuoteForm.js";
+import FuelQuoteForm from '../Components/FuelQuoteForm.js';
 
 const FuelQuoteFormPage = () => {
-    return (
-        <div>
-            <p>Fuel Quote Form Page</p>
-            <FuelQuoteForm />
-        </div>
-    );
+  return <FuelQuoteForm />;
 };
 
 export default FuelQuoteFormPage;

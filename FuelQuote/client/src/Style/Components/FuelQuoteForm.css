@@ -1,0 +1,43 @@
+.quote-form {
+  --primary: #6a0d83;
+  --secondary: #f9a237;
+
+  background-color: #deae74;
+  color: var(--primary);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  min-width: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 0.5rem;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    color: var(--primary);
+    font-size: 1rem;
+    border: var(--primary) solid 1px;
+    border-radius: 10px;
+    background-color: #deae74;
+  }
+
+  .form-row {
+    width: 100%;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+
+  .form-estimate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    justify-items: start;
+  }
+}
