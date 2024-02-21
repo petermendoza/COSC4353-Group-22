@@ -1,34 +1,40 @@
+import '../Style/Components/LoginForm.css';
+
 import React from "react";
-import './RegisterForm.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const RegisterForm = () => {
+const LoginForm = () => {
 
     return (
         <div className = 'wrapper'>
             <form action = "">
-                <h1>Register</h1>
-                <p className = "user-instructions"> Enter a Username: </p>
+                <h1>Welcome</h1>
                 <div className = "input-box">
                     <input type = "username" placeholder = 'Username' required />
                     <FaUser className = 'icon'/>
                 </div>
-                <p className = "user-instructions"> Enter a Password: </p>
-                <div className = "input-box">                    
+                <div className = "input-box">
                     <input type = "password" placeholder = 'Password' required />
                     <FaLock className = 'icon'/>
                 </div>
                 
                 <Link to = "/Profile">
-                    <button type = "submit">Register</button>
+                    <button type = "submit">Login</button>
                 </Link>
 
-              
+                <div class = "divider">
+                    <hr></hr>
+                    <p> OR </p>
+                    <hr></hr>
+                </div>
 
+                <Link to = "/RegisterPage">
+                    <button type = "register-link">Create Account</button>
+                </Link>
             </form>
         </div>
     );
 };
 
-export default RegisterForm
+export default LoginForm

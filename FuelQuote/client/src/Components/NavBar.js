@@ -1,4 +1,4 @@
-import './NavBar.css';
+import '../Style/Components/NavBar.css';
 
 import React from 'react';
 
