@@ -26,7 +26,7 @@ const FuelQuoteForm = () => {
         <p>Qty</p>
         <p>Unit Price($)</p>
         <p>Total</p>
-        <input className='input-qty' type='number'></input>
+        <input className='input-qty' required type='number'></input>
         <p>{unitPrice}</p>
         <p>{total}</p>
       </div>
