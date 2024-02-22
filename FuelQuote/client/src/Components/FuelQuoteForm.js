@@ -9,27 +9,52 @@ const FuelQuoteForm = () => {
 
   return (
     <div className='quote-form'>
-      <h2>Price Quote</h2>
+      <h2>Price Quote Form</h2>
 
       <div className='form-row'>
+        
         <p>Ship to:</p>
-        <p>{address}</p>
+        
+        <div className = "input-box">
+          <input type = "shippingAddress" placeholder = 'Shipping Address' required />
+        </div>
+      
       </div>
 
       <div className='form-row'>
-        <p>Ship by: </p>
-        <input className='input-date' type='date' value='2024-07-22' />
-      </div>
-      <br />
+        
+        <div className = 'dataBox'>
+          <p>Ship by: </p>
+          <input className='input-date' type='date' value='2024-07-22' />
+        </div>
+      
+        <div className = 'dataBox'>
+          <p>Quantity: </p>
+          <input className='input-qty' required type='number'></input>
+        </div>
 
-      <div className='form-estimate'>
-        <p>Qty</p>
-        <p>Unit Price($)</p>
-        <p>Total</p>
-        <input className='input-qty' required type='number'></input>
-        <p>{unitPrice}</p>
-        <p>{total}</p>
       </div>
+      
+      <hr />
+
+      <div className='form-row'>
+
+        <div className = 'dataBox'>
+          <p>Unit Price($): </p>
+          <p className = 'infoDisplay'>{unitPrice}</p>
+        </div>
+        
+        <div className = 'dataBox'>
+          <p>Total: </p>
+          <p className = 'infoDisplay'>${total}</p>
+        </div>
+
+      </div>
+
+      <div className = 'submit-row'>
+        <button type = "submit">Submit</button>
+      </div>
+
     </div>
   );
 };

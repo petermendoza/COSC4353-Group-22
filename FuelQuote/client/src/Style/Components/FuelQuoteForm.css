@@ -18,6 +18,18 @@
     margin-bottom: 0.5rem;
   }
 
+  .input-box input {
+    width: 30vw; 
+    height: 2vh; 
+    background: transparent; 
+    outline: none; 
+    border: 2px solid rgba(106, 13, 131, .2); 
+    border-radius: 40px; 
+    font-size: 16px; 
+    color: #6a0d83; 
+    padding: 20px 45px 20px 20px; 
+  }
+  
   input {
     color: var(--primary);
     font-size: 1rem;
@@ -26,11 +38,22 @@
     background-color: #deae74;
   }
 
+  .input-date {
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+  }
+
+  .input-qty {
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+  }
+
   .form-row {
     width: 100%;
     display: flex;
-    align-items: space-between;
+    align-items: center;
     justify-content: space-between;
+    margin: 10px 0px 0px 0px;
   }
 
   .form-estimate {
@@ -39,5 +62,49 @@
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     justify-items: start;
+  }
+
+  .dataBox {
+    display: flex;
+  }
+
+  .infoDisplay {
+    margin: 0px 0px 10px 10px;
+    text-align: center;
+  }
+
+  hr {
+    background-color: #6a0d83;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
+  }
+
+  button {
+    width: 20vw; 
+    height: 45px; 
+    margin: 3px 0;
+    background: #ee5d6e; 
+    border: none; 
+    outline: none; 
+    border-radius: 40px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); 
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff; 
+    font-weight: 700; 
+}
+
+  button:hover {
+      background: #6a0d83; 
+  }
+  
+  .submit-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
   }
 }
