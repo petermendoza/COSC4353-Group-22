@@ -8,21 +8,30 @@ const NavBar = () => {
             
             <div className = "navButtons">
 
-            <a className = "links" href = "/LoginPage">
-                    Login 
-                </a>
+                <div className = 'linkBox'>
+                    <a className = "links" href = "/LoginPage">
+                        Login 
+                    </a>
+                </div>
 
-                <a className = "links" href = "/Profile">
-                    Profile 
-                </a>
+                <div className = 'linkBox'>
+                    <a className = "links" href = "/Profile">
+                        Profile 
+                    </a>
+                </div> 
 
-                <a className = "links" href = "/FuelQuoteFormPage">
-                    Get a Quote 
-                </a>
+                <div className = 'linkBox'>
+                    <a className = "links" href = "/FuelQuoteFormPage">
+                        Get a Quote 
+                    </a>
+                </div>
 
-                <a className = "links" href = "/FuelQuoteHistoryPage">
-                    History 
-                </a>
+                <div className = 'linkBox'>
+                    <a className = "links" href = "/FuelQuoteHistoryPage">
+                        History 
+                    </a>
+                </div>
+                
             </div>
 
         </div>
