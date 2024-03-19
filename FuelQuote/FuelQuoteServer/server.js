@@ -4,6 +4,9 @@ const app = express();
 
 const cors = require("cors");
 
+//routes for login & signUp here
+const userRoutes = require('./routes/user')
+
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 5000;
 
@@ -12,6 +15,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use(require("./routes/record"));
+
+app.use('/api/user', userRoutes)
 
 // Get MongoDB driver connection
 const dbo = require("./database/conn");
