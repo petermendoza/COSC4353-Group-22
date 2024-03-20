@@ -29,10 +29,10 @@ app.use((req, res, next) => {
 })
 
 //resgister routes for login & signUp here
-app.use('/api/user', () => userRoutes)
+app.use('/api/user', userRoutes)
 
 // Registering routes for Fuel Quotes
-app.use('/api/fuelQuote', () => fuelQuoteRoutes)
+app.use('/api/fuelQuote', fuelQuoteRoutes)
 
 app.listen(port, () => {
   // Perform a database connection when server starts
