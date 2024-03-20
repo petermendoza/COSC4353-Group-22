@@ -18,6 +18,9 @@ app.use(require("./routes/record"));
 //resgister routes for login & signUp here
 app.use('/api/user', userRoutes)
 
+app.use('/api/profile', require('./routes/profileRoutes'))
+
+
 // Error Handler
 app.use(errorHandler)
 // Get MongoDB driver connection
