@@ -1,5 +1,5 @@
 const express = require("express");
-
+const errorHandler = require("./middleware/errorHandler")
 const app = express();
 
 const cors = require("cors");
@@ -18,6 +18,8 @@ app.use(require("./routes/record"));
 //resgister routes for login & signUp here
 app.use('/api/user', userRoutes)
 
+// Error Handler
+app.use(errorHandler)
 // Get MongoDB driver connection
 const dbo = require("./database/conn");
  
