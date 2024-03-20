@@ -58,7 +58,7 @@ const ClientProfileFormEdit = (props) => {
                         <input type = "city" placeholder = 'City*' required minLength = "1" maxLength = "100" onChange = { 
                             e => {setCharCountCity(e.target.value.length); setCity(e.target.value)}
                         }/>
-                        <input type = "zipcode" placeholder = 'Zipcode*' required minLength = "1" maxLength = "9" onChange = { 
+                        <input type="number" placeholder = 'Zipcode*' required minLength = "1" maxLength = "9" onChange = { 
                             e => {setCharCountZipcode(e.target.value.length); setZipcode(e.target.value)}
                         }/>    
                         <select onChange = {(e) => setState(e.target.value)}>

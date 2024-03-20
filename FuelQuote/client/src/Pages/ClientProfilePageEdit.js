@@ -11,9 +11,8 @@ const ClientProfilePageEdit = () => {
     const [state, setState] = useState("")
 
     // on form save changes click handler
-    const handleSave = (event) => {
-        event.preventDefault();
-
+    const handleSave = () => {
+        
         const newProfile = {
             name,
             address1,
