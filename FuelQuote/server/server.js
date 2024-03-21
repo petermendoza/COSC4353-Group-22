@@ -1,5 +1,5 @@
 const express = require("express");
-
+const errorHandler = require("./middleware/errorHandler")
 const app = express();
 
 const cors = require("cors");
@@ -20,6 +20,11 @@ app.use(express.json());
 // May not need
 app.use(require("./routes/record"));
 
+app.use('/api/profile', require('./routes/profileRoutes'))
+
+
+// Error Handler
+app.use(errorHandler)
 // Get MongoDB driver connection
 const dbo = require("./database/conn");
  
