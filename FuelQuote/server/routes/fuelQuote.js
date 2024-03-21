@@ -23,6 +23,16 @@ router.get('/', (req, res) => {
         "deliveryDate": "May 20, 2024",
         "suggestedPrice": 30.68,
         "totalAmountDue": 2984.99 
+    },
+    {
+        "clientID": 303030,
+        "quoteID": 333333,
+        "dateRequested": "March 7, 2024",
+        "gallonsRequested": 50,
+        "deliveryAddress": "Address of Delivery",
+        "deliveryDate": "August 20, 2024",
+        "suggestedPrice": 30.68,
+        "totalAmountDue": 2984.99 
     }
     ]);
 })
