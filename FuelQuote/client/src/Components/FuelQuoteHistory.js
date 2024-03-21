@@ -6,7 +6,7 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 const FuelQuoteHistory = () => {
 
-    const [history,setHistory] = useState(null)
+    const [history,setHistory] = useState([])
     const [selected,setSelected] = useState(null)
 
     // Toggle to display information for selected Fuel Quote
