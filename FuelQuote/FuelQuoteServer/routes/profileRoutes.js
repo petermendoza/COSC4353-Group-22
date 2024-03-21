@@ -1,8 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-router.route("/").get((req,res) => {
-    res.status(200).json({message: "Get all profiles"});
+router.get('/', (req, res) => {
+    res.json({
+        "name": "Anita M. Wynn",
+        "address1": "Main st 123",
+        "address2":"N/A",
+        "city":"Houston",
+        "zipcode":77204,
+        "state":"TX"
+    });
 });
 
 router.route("/").post((req,res) => {

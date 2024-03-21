@@ -21,6 +21,7 @@ const ClientProfilePageEdit = () => {
             zipcode,
             state
         }
+        // Placeholder for object to be uploaded/updated to DB
         console.log(newProfile);
     }
 

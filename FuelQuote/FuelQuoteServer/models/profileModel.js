@@ -26,6 +26,11 @@ const profileSchema = mongoose.Schema({
         type: String,
         required: [true, "Please add the name"]
     },
+    // Should be automatically filled when logged in
+    loginID: {
+        type: mongoose.Types.ObjectId(),
+        required: [true, "Need to login to make profile"]
+    }
 }, {
     // Add timestamps to when you add
     timestamps: true,
