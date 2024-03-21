@@ -9,6 +9,7 @@ const FuelQuoteHistory = () => {
     const [history,setHistory] = useState(null)
     const [selected,setSelected] = useState(null)
 
+    // Toggle to display information for selected Fuel Quote
     const toggle = (i) => {
         if (selected === i) {
             return setSelected(null)
@@ -17,6 +18,7 @@ const FuelQuoteHistory = () => {
         setSelected(i)
     }
 
+    // Fetch to get Fuel Quote data from API call
     useEffect( () => {
         const fetchHistory = async () => {
             const response = await fetch('/api/fuelQuote')
