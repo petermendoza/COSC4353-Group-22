@@ -15,7 +15,6 @@ const ClientProfileForm = () => {
             
             if (response.ok) {
                 setProfile(json)
-                console.log(profile)
             }
 
         } 
@@ -23,32 +22,32 @@ const ClientProfileForm = () => {
         fetchProfile()
     }, [])
 
-    return (
+    return (profile &&
         <div class = "wrapper-large" id="wrapper-profile">
             <h1>Profile</h1>
             <div class="profile-row">
                 <p>Full Name:</p>
-                {/* <p>{profile.name}</p> */}
+                <p>{profile.name}</p>
             </div>
             <div class="profile-row">
                 <p>Address 1:</p>
-                {/* <p>{profile.address1}</p> */}
+                <p>{profile.address1}</p>
             </div>
             <div class="profile-row">
                 <p>Address 2:</p>
-                {/* <p>{profile.address2}</p> */}
+                <p>{profile.address2}</p>
             </div>
             <div class="profile-row">
                 <p>City:</p>
-                {/* <p>{profile.city}</p> */}
+                <p>{profile.city}</p>
             </div>
             <div class="profile-row">
                 <p>Zipcode:</p>
-                {/* <p>{profile.zipcode}</p> */}
+                <p>{profile.zipcode}</p>
             </div>
             <div class="profile-row">
                 <p>State:</p>
-                {/* <p>{profile.state}</p> */}
+                <p>{profile.state}</p>
             </div>
 
             <Link to = "/Profile/Edit">
