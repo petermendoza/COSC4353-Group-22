@@ -10,6 +10,9 @@ const userRoutes = require('./routes/user')
 // Importing fuel quote routes
 const fuelQuoteRoutes = require('./routes/fuelQuote')
 
+//Importing login routes 
+const loginRoutes = require('./routes/login')
+
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 5000;
 
@@ -33,6 +36,9 @@ app.use('/api/user', userRoutes)
 
 // Registering routes for Fuel Quotes
 app.use('/api/fuelQuote', fuelQuoteRoutes)
+
+//Registering routes for Login 
+app.use('/api/userLogin',loginRoutes)
 
 app.listen(port, () => {
   // Perform a database connection when server starts
