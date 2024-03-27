@@ -16,7 +16,6 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/api/profile', require('./routes/profileRoutes'));
-app.use('/api/user', require('./routes/user'));
 app.use('/api/fuelQuote', require('./routes/fuelQuote'));
 app.use('/api/userLogin',require('./routes/login'));
 
