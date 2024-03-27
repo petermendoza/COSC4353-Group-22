@@ -12,29 +12,29 @@ const FuelQuoteForm = () => {
       <h2>Price Quote Form</h2>
 
       <div className='form-row'>
-        
+
         <p>Ship to:</p>
-        
+
         <div className = "input-box">
           <input type = "shippingAddress" placeholder = 'Shipping Address' required />
         </div>
-      
+
       </div>
 
       <div className='form-row'>
-        
+
         <div className = 'dataBox'>
           <p>Ship by: </p>
           <input className='input-date' type='date' value='2024-07-22' />
         </div>
-      
+
         <div className = 'dataBox'>
           <p>Quantity: </p>
           <input className='input-qty' required type='number'></input>
         </div>
 
       </div>
-      
+
       <hr />
 
       <div className='form-row'>
@@ -43,7 +43,7 @@ const FuelQuoteForm = () => {
           <p>Unit Price($): </p>
           <p className = 'infoDisplay'>{unitPrice}</p>
         </div>
-        
+
         <div className = 'dataBox'>
           <p>Total: </p>
           <p className = 'infoDisplay'>${total}</p>

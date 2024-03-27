@@ -11,20 +11,20 @@ import FuelQuoteHistoryPage from './Pages/FuelQuoteHistoryPage';
 
 function App() {
   return (
-      <div className="App">
-        <NavBar />
-        <BrowserRouter>
-          <Routes>
-            <Route index element = {<LoginPage />} />
-            <Route path = "/LoginPage" element = {<LoginPage />} />
-            <Route path = "/Profile/Edit" element = {<ClientProfilePageEdit />} />
-            <Route path = "/Profile" element = {<ClientProfilePage />} />
-            <Route path = "/FuelQuoteFormPage" element = {<FuelQuoteFormPage />} />
-            <Route path = "/FuelQuoteHistoryPage" element = {<FuelQuoteHistoryPage />} />
-            <Route path = "/RegisterPage" element = {<RegisterPage />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+    <div className="App">
+      <NavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route index element = {<LoginPage />} />
+          <Route path = "/LoginPage" element = {<LoginPage />} />
+          <Route path = "/Profile/Edit" element = {<ClientProfilePageEdit />} />
+          <Route path = "/Profile" element = {<ClientProfilePage />} />
+          <Route path = "/FuelQuoteFormPage" element = {<FuelQuoteFormPage />} />
+          <Route path = "/FuelQuoteHistoryPage" element = {<FuelQuoteHistoryPage />} />
+          <Route path = "/RegisterPage" element = {<RegisterPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

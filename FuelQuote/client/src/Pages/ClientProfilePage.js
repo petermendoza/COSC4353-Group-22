@@ -1,11 +1,11 @@
-import ClientProfileForm from "../Components/ClientProfileForm/ClientProfileForm";
+import ClientProfileForm from '../Components/ClientProfileForm/ClientProfileForm';
 
 const ClientProfilePage = () => {
-    return (
-        <div>
-            <ClientProfileForm />
-        </div>
-    );
+  return (
+    <div>
+      <ClientProfileForm />
+    </div>
+  );
 };
 
 export default ClientProfilePage;
