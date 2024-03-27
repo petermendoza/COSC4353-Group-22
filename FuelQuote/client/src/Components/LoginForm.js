@@ -25,7 +25,7 @@ const LoginForm = () => {
           const data = await response.json();
 
           // If validation from backend passes
-          if (data.message == "Login successful") {
+          if (data.message === "Login successful") {
             // Redirect Client Profile after successful login
             window.location.href = "/Profile"
 
