@@ -1,5 +1,5 @@
 const express = require("express");
-const errorHandler = require("./middleware/errorHandler");
+const errorHandler = require("./Middleware/errorHandler");
 const cors = require("cors");
 const app = express();
 
@@ -15,9 +15,9 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/api/profile', require('./routes/profileRoutes'));
-app.use('/api/fuelQuote', require('./routes/fuelQuote'));
-app.use('/api/userLogin',require('./routes/login'));
+app.use('/api/Profile', require('./Routes/ProfileRoutes'));
+app.use('/api/FuelQuote', require('./Routes/FuelQuote'));
+app.use('/api/UserLogin',require('./Routes/Login'));
 
 // Port
 require("dotenv").config({ path: "./config.env" });
