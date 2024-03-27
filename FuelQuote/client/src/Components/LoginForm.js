@@ -13,7 +13,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/userLogin', {
+      const response = await fetch('/api/UserLogin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

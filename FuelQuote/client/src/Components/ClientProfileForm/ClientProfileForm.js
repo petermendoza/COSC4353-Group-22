@@ -10,7 +10,7 @@ const ClientProfileForm = () => {
   // Fetches profile info
   useEffect(() => {
     const fetchProfile = async () => {
-      const response = await fetch('/api/profile');
+      const response = await fetch('/api/Profile');
       const json = await response.json();
 
       if (response.ok) {
@@ -23,29 +23,29 @@ const ClientProfileForm = () => {
 
   return (
     profile && (
-      <div class='wrapper-large' id='wrapper-profile'>
+      <div className='wrapper-large' id='wrapper-profile'>
         <h1>Profile</h1>
-        <div class='profile-row'>
+        <div className='profile-row'>
           <p>Full Name:</p>
           <p>{profile.name}</p>
         </div>
-        <div class='profile-row'>
+        <div className='profile-row'>
           <p>Address 1:</p>
           <p>{profile.address1}</p>
         </div>
-        <div class='profile-row'>
+        <div className='profile-row'>
           <p>Address 2:</p>
           <p>{profile.address2}</p>
         </div>
-        <div class='profile-row'>
+        <div className='profile-row'>
           <p>City:</p>
           <p>{profile.city}</p>
         </div>
-        <div class='profile-row'>
+        <div className='profile-row'>
           <p>Zipcode:</p>
           <p>{profile.zipcode}</p>
         </div>
-        <div class='profile-row'>
+        <div className='profile-row'>
           <p>State:</p>
           <p>{profile.state}</p>
         </div>

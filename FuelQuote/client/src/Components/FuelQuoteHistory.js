@@ -20,7 +20,7 @@ const FuelQuoteHistory = () => {
   // Fetch to get Fuel Quote data from API call
   useEffect(() => {
     const fetchHistory = async () => {
-      const response = await fetch('/api/fuelQuote');
+      const response = await fetch('/api/FuelQuote');
       const json = await response.json();
 
       if (response.ok) {

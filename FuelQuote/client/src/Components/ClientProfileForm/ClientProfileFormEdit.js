@@ -48,7 +48,7 @@ const ClientProfileFormEdit = (props) => {
             setName(e.target.value);
           }}
         />
-        <p class='charLimit'>
+        <p className='charLimit'>
           {charLimitFullName - charCountFullName} characters remaining.
         </p>
       </div>
@@ -64,7 +64,7 @@ const ClientProfileFormEdit = (props) => {
             setAddress1(e.target.value);
           }}
         />
-        <p class='charLimit'>
+        <p className='charLimit'>
           {charLimitAddress1 - charCountAddress1} characters remaining.
         </p>
       </div>
@@ -80,7 +80,7 @@ const ClientProfileFormEdit = (props) => {
             setAddress2(e.target.value);
           }}
         />
-        <p class='charLimit'>
+        <p className='charLimit'>
           {charLimitAddress2 - charCountAddress2} characters remaining.
         </p>
       </div>
@@ -164,13 +164,13 @@ const ClientProfileFormEdit = (props) => {
           <option value='WI'>WI</option>
           <option value='WY'>WY</option>
         </select>
-        <div class='inline'>
-          <p class='charLimit' id='cityCharLimit'>
+        <div className='inline'>
+          <p className='charLimit' id='cityCharLimit'>
             {charLimitCity - charCountCity} characters remaining.
           </p>
         </div>
-        <div class='inline'>
-          <p class='charLimit' id='zipcodeCharLimit'>
+        <div className='inline'>
+          <p className='charLimit' id='zipcodeCharLimit'>
             {charLimitZipcode - charCountZipcode} characters remaining.
           </p>
         </div>
