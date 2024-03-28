@@ -10,6 +10,7 @@ const RegisterForm = () => {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isExist, setExist] = useState();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +29,8 @@ const RegisterForm = () => {
         // Redirect Client Profile after successful login
         window.location.href = '/Profile';
       } else {
-        // If validation does not pass
+        // If user already exists in DB meaning validation does not pass
+        setExist(true);
         console.log(data.message);
       }
     } catch (error) {
@@ -60,7 +62,14 @@ const RegisterForm = () => {
           <FaLock className='icon' />
         </div>
 
-        <button type='submit'>Register</button>
+        <div className = 'registerButton'>
+          <button type='submit'>Register</button>
+          {
+            isExist && 
+            <p className = 'existMess'>* This user already exists! *</p>
+          }
+        </div>
+        
         
       </form>
     </div>
