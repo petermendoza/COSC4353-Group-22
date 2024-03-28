@@ -17,7 +17,8 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/Profile', require('./Routes/ProfileRoutes'));
 app.use('/api/FuelQuote', require('./Routes/FuelQuote'));
-app.use('/api/UserLogin',require('./Routes/Login'));
+app.use('/api/UserLogin',require('./routes/login'));
+app.use('/api/Register', require('./routes/register')) ;
 
 // Port
 require("dotenv").config({ path: "./config.env" });
